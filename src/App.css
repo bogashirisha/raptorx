@@ -1,0 +1,190 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  color: #1a202c;
+  transition: color 0.2s ease-in;
+}
+
+#app {
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.dark_toggle {
+  margin: 40px 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+#toggle {
+  width: 50px;
+  display: flex;
+  padding: 5px;
+  background-color: #1a202c;
+  display: block;
+  border-radius: 1000px;
+  cursor: pointer;
+  box-shadow: 0px 5px 20px -10px #000000;
+  transition: background-color 0.2s ease-in;
+  border: 1px solid;
+}
+
+.toggle-inner {
+  width: 20px;
+  height: 15px;
+  background-color: white;
+  border-radius: 1000px;
+  transition: margin-left 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+.toggle-inner.toggle-active {
+  margin-left: 20px;
+}
+
+#container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+p {
+  opacity: .8;
+}
+
+#toggle {
+  background-color: white;
+}
+
+.toggle-inner {
+  background-color: #1a202c;
+}
+
+.custom_card {
+  background: #e1e1e1 !important;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width:767px) {
+  .custom_card {
+    padding: 0;
+  }
+
+  .drag_section {
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .droppable {
+    gap: 50px;
+    flex-direction: column;
+    margin-right: 0;
+  }
+ 
+}
+
+.dark-mode {
+  color: white;
+  background-color: #1a202c;
+  transition: background-color 0.2s ease-in;
+}
+
+.dark-mode .custom_card {
+  /* color: white; */
+  background-color: #4c4c4c !important;
+  transition: background-color 0.2s ease-in;
+}
+
+.dark-mode .heading {
+  border-color: white;
+  color: white;
+}
+
+.dark-mode tspan {
+  fill: white !important;
+}
+
+.dark-mode .task_card {
+  background: #7ffaffa1;
+  color: #fff;
+}
+.task_card{
+  padding: 10px;
+}
+
+.dark-mode .taskList {
+  background: #0000003b !important;
+}
+
+.dark-mode .MuiTableContainer-root th,
+.dark-mode .MuiTableContainer-root td {
+  color: white !important;
+}
+
+.dark-mode .MuiPaper-root {
+  background-color: #4c4c4c !important;
+}
+
+input {
+  color: #000000 !important;
+}
+
+.dark-mode input {
+  color: #fff !important;
+}
+
+.MuiTableSortLabel-root.Mui-active,
+.MuiTableSortLabel-icon,
+.MuiTableSortLabel-root:hover {
+  color: #0085cf !important;
+}
+
+.dark-mode .MuiTablePagination-toolbar,
+.MuiTablePagination-selectIcon {
+  color: #fff !important;
+}
+
+.dark-mode .MuiOutlinedInput-notchedOutline {
+  border-color: white;
+}
+
+.dark-mode .MuiInputLabel-formControl {
+  color: #fff !important;
+}
+
+.heading {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: #0085cf;
+  border-bottom: 2px solid black;
+  color: black;
+  margin-bottom: 50px;
+  padding: 5px 0;
+  border-radius: 4px;
+}
+.image_width{
+  height: 50px;
+}
